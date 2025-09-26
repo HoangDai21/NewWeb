@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New website</title>
-    <link rel="stylesheet" href="styles.css"/>
+    <title>Test Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
-<body>  
+<body>
     <nav class="navbar">
         <div class="navbar__container">
             <a href="/" id="navbar__logo">My New  Web </a>
@@ -32,11 +33,16 @@
             </ul>
         </div>
     </nav>
-<body>
+    <h1>Login</h1>
+    <form action="submit_login" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <input type="submit" value="Login">
+    </form>
+</body>
 </html>
 <script>
-document.addEventListener("contextmenu", function(event){
-    event.preventDefault();
-    alert("Bạn không thể xem source code!");
-});
+    console.log('Inline script executed');
 </script>

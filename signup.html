@@ -6,11 +6,12 @@
     <title>Test Page</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
+    
 </head>
 <body>
     <nav class="navbar">
         <div class="navbar__container">
-            <a href="/" id="navbar__logo">My New  Web </a>
+            <a href="/" id="navbar__logo">My New Web </a>
             
             <ul class="navbar__menu">
                 <li class="navbar__btn">
@@ -23,7 +24,7 @@
                     <a href="product.html" class="navbar__links" id="products-page">Products</a>
                 </li>
                 <li class="navbar__btn">
-                    <a href="sign-up" class="button" id="signup">Sign Up/Log in</a>
+                    <a href="signup.html" class="button" id="sign_up">Sign Up/Log in</a>
                 </li>
                 <div class="navbar__toggle" id="mobile-menu">
                 <span class="bar"></span>
@@ -33,16 +34,26 @@
             </ul>
         </div>
     </nav>
-    <h1>Login</h1>
-    <form action="submit_login" method="post">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required><br><br>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required><br><br>
-        <input type="submit" value="Login">
-    </form>
+
+    <div class="login-container">
+        <h1>Login/Sign Up</h1>
+        <form action="index.html" method="post">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Email address or phone number" required
+                >
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+            </div>
+            <div class="button-group">
+                <input type="submit" value="Login">
+                <a href="createac.html" class="button-create-account" id="create_account">Create Account</a>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
 <script>
-    console.log('Inline script executed');
 </script>

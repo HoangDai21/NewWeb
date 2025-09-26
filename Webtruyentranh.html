@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New website</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>  
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo">My New  Web </a>
+            
+            <ul class="navbar__menu">
+                <li class="navbar__btn">
+                    <a href="/" class="navbar__links" id="home-page">Home</a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="/tech.html" class="navbar__links" id="Tech">Tech</a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="/products" class="navbar__links" id="products-page">Products</a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="/sign-up" class="button" id="signup">Sign Up</a>
+                </li>
+                <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            </ul>
+        </div>
+    </nav>
+    <!DOCTYPE html>
+    <html>
+    <head>
+    </head>
+    <body>
+        
+    
+        <script>
+            // Chặn F12
+            document.addEventListener("keydown", function(event) {
+                if (event.key === "F12" || (event.ctrlKey && (event.key === "u" || event.key === "U" || event.key === "Shift"))) {
+                    event.preventDefault();
+                    alert("Chức năng này bị vô hiệu hóa!");
+                }
+            });
+    
+            // Chặn chuột phải
+            document.addEventListener("contextmenu", function(event){
+                event.preventDefault();
+                alert("Bạn không thể xem source code!");
+            });
+        </script>
+    </body>
+    </html>
+    
+<body>
+</html>

@@ -40,8 +40,7 @@
         <form action="index.html" method="post">
             <div class="form-group">
                 <label for="username">Username:</label>
-                <input type="text" id="username" name="username" placeholder="Email address or phone number" required
-                >
+                <input type="text" id="username" name="username" placeholder="Email address or phone number" required>
             </div>
             <div class="form-group">
                 <label for="password">Password:</label>
@@ -56,4 +55,16 @@
 </body>
 </html>
 <script>
+// Lấy dữ liệu khi form được submit
+document.querySelector('form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+    
+    console.log('Username:', username);
+    console.log('Password:', password);
+    
+    // Xử lý login logic ở đây
+});
 </script>
